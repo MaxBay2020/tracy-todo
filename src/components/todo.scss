@@ -1,0 +1,73 @@
+#todoContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+
+  .dotEmpty{
+    height: 10px;
+    width: 10px;
+    border: 1px solid teal;
+  }
+  .dotFill {
+    height: 10px;
+    width: 10px;
+    border: 1px solid teal;
+    background: teal;
+  }
+
+  & > .deleteBtn{
+    border: 1px solid #fff;
+    background: tomato;
+    padding: 4px 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: #d93b1e;
+      transform: translateY(-2px);
+      box-shadow: 2px 2px 10px lightgrey;
+    }
+  }
+
+  & > .fillBg {
+    border: 1px solid #fff;
+    background: teal;
+    padding: 4px 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: #054d45;
+      transform: translateY(-2px);
+      box-shadow: 2px 2px 10px lightgrey;
+    }
+  }
+
+  .todoText{
+    text-decoration: line-through;
+  }
+
+  #taskText{
+    cursor: pointer;
+  }
+  .editTask{
+    padding: 4px 8px 2px 8px;
+    font-size: 16px;
+    color: gray;
+    outline: none;
+    border: none;
+    width: 0;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      border-bottom: 1px solid gray;
+      width: 200px;
+    }
+  }
+}
+
+

@@ -1,0 +1,56 @@
+.todoPanelContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .titleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    & > h1 {
+      color: gray;
+      font-size: 28px;
+    }
+  }
+
+  .todoInput{
+    border: none;
+    border-bottom: 1px solid goldenrod;
+    outline: none;
+    padding: 4px 4px 2px 4px;
+    margin-right: 16px;
+    width: 150px;
+    transition: all 0.4s ease-in-out;
+
+    &:focus{
+      width: 300px;
+    }
+  }
+
+  .addButton{
+    padding: 6px 10px;
+    background: steelblue;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover{
+      background: #fff;
+      color: steelblue;
+      border: 1px solid steelblue;
+      //transform: translate(10px, -10px);
+      //transform: rotate(90deg)
+      //transform: translate(10px, -10px) rotate(90deg) scale(1.1)
+      //transform: scale(1.1)
+
+    }
+  }
+}
+
+
